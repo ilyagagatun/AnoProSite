@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anonymous Pro — моноширинный шрифт</title>
+
+    <!-- Подключаем шрифт Anonymous Pro с Google Fonts (нужен интернет).
+       Начертания: обычный, курсив, жирный, жирный курсив. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="page">
+      <!-- ============================================================
+       1. ГЛАВНЫЙ ЭКРАН: заголовок, чёрная плашка и большой курсор
+       ============================================================ -->
+      <section class="block hero">
+        <h1 class="hero__title positioned">
+          Anonymous
+          <span class="hero__title-pro">Pro</span>
+        </h1>
+
+        <!-- Чёрная плашка с изогнутыми краями (нарисована как SVG-фигура вставил в ИИ) -->
+        <svg
+          class="hero__bubble positioned"
+          viewBox="0 0 1086 372"
+          aria-hidden="true"
+        >
+          <path
+            d="M2 2 L1052 2
+               C1041 45 1036 72 1038 102
+               C1040 135 1056 165 1078 186
+               L1085 368
+               C1060 360 1040 352 1021 343
+               C905 298 700 275 541 277
+               C360 277 180 296 2 313 Z"
+            fill="#000"
+            stroke="#787878"
+            stroke-width="4"
+          />
+        </svg>
+
+        <p class="hero__bubble-text positioned">
+          Он не пытается<br />понравиться
+        </p>
+
+        <img
+          class="hero__cursor positioned"
+          src="images/cursor-arrow.png"
+          alt=""
+        />
+      </section>
+
+      <!-- ============================================================
+       2. НАЧЕРТАНИЯ: окно «Блокнот» и четыре строки с образцами
+       ============================================================ -->
+      <section class="block styles">
+        <img
+          class="styles__window positioned"
+          src="images/Gemini_Generated_Image_a6masia6masia6ma.jpg"
+          alt=""
+        />
+
+        <h2 class="styles__title positioned">Начертания</h2>
+
+        <ul class="styles__list positioned">
+          <li class="style-row style-row--regular">
+            <span class="style-row__name">Regular</span>
+            <span class="style-row__sample">Aa Bb Cc 0123456789</span>
+          </li>
+          <li class="style-row style-row--italic">
+            <span class="style-row__name">Italic</span>
+            <span class="style-row__sample">Aa Bb Cc 0123456789</span>
+          </li>
+          <li class="style-row style-row--bold">
+            <span class="style-row__name">Bold</span>
+            <span class="style-row__sample">Aa Bb Cc 0123456789</span>
+          </li>
+          <li class="style-row style-row--bold-italic">
+            <span class="style-row__name">Bold Italic</span>
+            <span class="style-row__sample">Aa Bb Cc 0123456789</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============================================================
+       3. О ШРИФТЕ: плашка про автора, вкладки с «Aa»,
+          блокнот с буквой E и подписями
+       ============================================================ -->
+      <section class="block about">
+        <div class="about__label positioned"></div>
+        <p class="about__label-text positioned">
+          Разработал Марк<br />Симонсоном<br />в 2009 году
+        </p>
+
+        <!-- Окно с вкладками (картинка) -->
+        <img
+          class="about__tabs positioned"
+          src="images/62f62191-2b22-489e-a2b8-ba73cd6f0cb9.png"
+          alt=""
+        />
+
+        <!-- Всё, что нарисовано поверх вкладок: пунктир, линии, буквы «Aa».
+         Внутри svg координаты такие же, как в макете (см. viewBox). -->
+        <svg
+          class="about__tabs-drawing positioned"
+          viewBox="941 2534 979 660"
+          aria-hidden="true"
+        >
+          <!-- пунктирные линии сверху и снизу -->
+          <line
+            class="dotted-line"
+            x1="1115"
+            y1="2672.5"
+            x2="1788"
+            y2="2672.5"
+          />
+          <line
+            class="dotted-line"
+            x1="1115"
+            y1="3075.5"
+            x2="1788"
+            y2="3075.5"
+          />
+          <!-- вертикальные линии слева и справа -->
+          <line
+            class="solid-line"
+            x1="1153.5"
+            y1="2686"
+            x2="1153.5"
+            y2="3066"
+          />
+          <line
+            class="solid-line"
+            x1="1766.5"
+            y1="2686"
+            x2="1766.5"
+            y2="3066"
+          />
+          <!-- огромные белые буквы -->
+          <text class="big-letters" x="1160" y="3050">Aa</text>
+          <!-- серая косая линия и дуга над буквой «a» -->
+          <line class="slanted-line" x1="1353" y1="2659" x2="1503" y2="3093" />
+          <image
+            href="images/aa-arc.svg"
+            x="1509"
+            y="2764"
+            width="250"
+            height="81"
+          />
+        </svg>
+
+        <!-- Маленький блокнот (картинка) -->
+        <img
+          class="about__notepad positioned"
+          src="images/Gemini_Generated_Image_a6masia6masia6ma.jpg"
+          alt=""
+        />
+
+        <!-- Рисунок на «листе» блокнота: буква E, синие рамки и подписи -->
+        <svg
+          class="about__notepad-drawing positioned"
+          viewBox="30 2846 1092 761"
+          role="img"
+          aria-label="Схема буквы E: равномерная толщина штрихов, строгая геометрия, открытая форма"
+        >
+          <!-- Буква E из четырёх серых прямоугольников -->
+          <g class="letter-e">
+            <rect x="440" y="3023" width="46" height="456" />
+            <!-- вертикальная палка -->
+            <rect x="440" y="3023" width="291" height="40" />
+            <!-- верхняя перекладина -->
+            <rect x="440" y="3228" width="227" height="40" />
+            <!-- средняя перекладина -->
+            <rect x="440" y="3439" width="291" height="41" />
+            <!-- нижняя перекладина -->
+          </g>
+
+          <!-- Синие пунктирные рамки -->
+          <g class="dashed-frames">
+            <rect x="418" y="2988" width="96" height="513" />
+            <rect x="657" y="2988" width="105" height="105" />
+            <rect x="578.5" y="3279.5" width="151" height="151" />
+          </g>
+
+          <!-- Пунктирные линии-указатели к подписям -->
+          <line class="pointer-line" x1="243" y1="3088" x2="416" y2="3372" />
+          <image
+            href="images/connector-strict.svg"
+            x="764"
+            y="3104"
+            width="25"
+            height="52"
+          />
+          <image
+            href="images/connector-open.svg"
+            x="740"
+            y="3423"
+            width="61"
+            height="10"
+          />
+
+          <!-- Подписи -->
+          <text class="note" x="69" y="3056">Равномерная толщина</text>
+          <text class="note" x="69" y="3084">штрихов</text>
+          <text class="note" x="768" y="3179">Строгая геометрия</text>
+          <text class="note" x="804" y="3438">Открытая форма</text>
+        </svg>
+      </section>
+
+      <!-- ============================================================
+       4. ЦИФРЫ: окно Paint
+       ============================================================ -->
+      <section class="block numbers">
+        <img
+          class="numbers__window positioned"
+          src="images/paint-window.png"
+          alt="Окно Paint"
+        />
+
+        <!-- Холст Paint с огромными цифрами (лежит поверх рамки окна) -->
+        <img
+          class="numbers__canvas positioned"
+          src="images/paint-numbers.svg"
+          alt="Огромные цифры 4, 6, 5 и 7 на холсте"
+        />
+      </section>
+
+      <!-- ============================================================
+       5. ЯЗЫКИ: заголовок, стопка окон, вкладки с алфавитами
+       ============================================================ -->
+      <section class="block languages">
+        <h2 class="languages__title positioned">
+          Anonymous
+          <span class="languages__title-pro">Pro</span>
+        </h2>
+
+        <!-- Порядок в коде = порядок слоёв: что ниже в коде, то выше на странице -->
+        <img
+          class="languages__stack positioned"
+          src="images/Gemini_Generated_Image_i1vj8wi1vj8wi1vj-Photoroom.png"
+          alt=""
+        />
+
+        <img
+          class="languages__tabs positioned"
+          src="images/62f62191-2b22-489e-a2b8-ba73cd6f0cb9.png"
+          alt=""
+        />
+
+        <p class="languages__column languages__column--cyrillic positioned">
+          абвгдеё<br />жзийклм<br />нопрсту<br />фхцчшщъ<br />ыьэюяаб
+        </p>
+        <p class="languages__column languages__column--latin-1 positioned">
+          abcdefg<br />hijklmn<br />opqrstu<br />vwxyzab<br />cdefghi
+        </p>
+        <p class="languages__column languages__column--latin-2 positioned">
+          aäbcdef<br />ghijklm<br />noöpqrs<br />ßtuüvwx<br />yzaäbcd
+        </p>
+        <img
+          class="languages__divider languages__divider--first positioned"
+          src="images/divider-1.svg"
+          alt=""
+        />
+        <img
+          class="languages__divider languages__divider--second positioned"
+          src="images/divider-2.svg"
+          alt=""
+        />
+
+        <p class="languages__caption positioned">67 языков в базовой версии</p>
+
+        <img
+          class="languages__window positioned"
+          src="images/Gemini_Generated_Image_kf13i2kf13i2kf13.png"
+          alt=""
+        />
+        <p class="languages__window-text positioned">
+          Anonymous Pro имеет связь с bitmap-типографикой 90-х
+        </p>
+      </section>
+
+      <!-- ============================================================
+       6. КОНТАКТЫ: синий «экран» с кнопками
+       ============================================================ -->
+      <footer class="block contacts">
+        <div class="contacts__frame"></div>
+
+        <p class="contacts__title positioned">ILYAGAGATUN.EXE</p>
+
+        <!-- Кнопки-ссылки. Замени href на свои настоящие ссылки -->
+        <a
+          class="contact-button contact-button--phone positioned"
+          href="tel:+79772913026"
+          >+7(977)2913026</a
+        >
+        <a
+          class="contact-button contact-button--email positioned"
+          href="mailto:ilyagagatun@ru"
+          >ilyagagatun@ru</a
+        >
+        <a
+          class="contact-button contact-button--vk positioned"
+          href="https://vk.com/"
+          >VKontakte</a
+        >
+        <a
+          class="contact-button contact-button--telegram positioned"
+          href="https://t.me/"
+          >TG</a
+        >
+        <a
+          class="contact-button contact-button--boosty positioned"
+          href="https://boosty.to/"
+          >boosty</a
+        >
+
+        <img
+          class="contacts__cursor positioned"
+          src="images/cursor-hand.png"
+          alt=""
+        />
+      </footer>
+    </main>
+  </body>
+</html>
